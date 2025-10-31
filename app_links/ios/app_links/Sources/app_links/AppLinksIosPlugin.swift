@@ -81,6 +81,7 @@ public final class AppLinksIosPlugin: NSObject, FlutterPlugin, FlutterStreamHand
     
     if let url = userActivity.webpageURL {
       handleLink(url: url)
+      return true
     }
     
     return false
